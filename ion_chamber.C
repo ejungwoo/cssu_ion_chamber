@@ -365,7 +365,7 @@ void ion_chamber()
     cout << "   c. save_figures(directory_name)" << endl;
     cout << "      : 그림들을 directory_name 에 저장합니다." << endl;
     cout << endl;
-    cout << "   c. run_tutorial()" << endl;
+    cout << "   d. run_tutorial()" << endl;
     cout << "      : 튜토리얼 데이터를 돌립니다." << endl;
     cout << endl;
 
