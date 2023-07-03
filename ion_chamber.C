@@ -143,7 +143,9 @@ void fit_energy(const char *fileName="c-85-01.Spe", double fitRange1=-999, doubl
         auto tt3 = new TLatex(xMin+(xMax-xMin)*0.08, 0+histMax*(1-0.09*3), Form("Sigma = %.2f",fSigma));
         auto tt4 = new TLatex(xMin+(xMax-xMin)*0.08, 0+histMax*(1-0.09*4), Form("#it{#chi} ^{2} = %.2f",fitGaus->GetChisquare()));
         auto tt5 = new TLatex(xMin+(xMax-xMin)*0.08, 0+histMax*(1-0.09*5), Form("NDF = %d",fitGaus->GetNDF()));
-        for (auto tt : {tt1,tt2,tt3,tt4,tt5}) {
+        //for (auto tt : {tt1,tt2,tt3,tt4,tt5})
+        for (auto tt : {tt1,tt2,tt3})
+        {
             tt -> SetTextFont(132);
             tt -> Draw();
         }
