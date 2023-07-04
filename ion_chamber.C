@@ -113,6 +113,7 @@ void fit_energy(const char *fileName="c-85-01.Spe", double fitRange1=-999, doubl
         fSigma = fitGaus -> GetParameter(2);
         xMin = fHistEnergy -> GetMean() - 5*fHistEnergy -> GetStdDev();
         xMax = fHistEnergy -> GetMean() + 3*fHistEnergy -> GetStdDev();
+        fHistEnergy -> SetMaximum(fAmplitude*1.3);
         if (xMin<0) xMin = 0;
         fHistEnergy -> GetXaxis() -> SetRangeUser(xMin,xMax);
     }
